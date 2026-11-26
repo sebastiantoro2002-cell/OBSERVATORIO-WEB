@@ -18,7 +18,7 @@ Repositorio estructurado con datos oficiales de la Policía Nacional de Colombia
     └── README.md
 
 ## 3. Decisiones de Limpieza (ETL)
-1. **Exclusión controlada:** Se excluyó `Hurto.xlsx` por corrupción de archivo; se integraron las 6 bases íntegras (`Amenazas`, `Delitos Sexuales`, `HomicidioIntencional`, `HurtoComercio`, `Secuestro`, `Terrorismo`).
+1 Se integraron las 6 bases íntegras (`Amenazas`, `Delitos Sexuales`, `HomicidioIntencional`, `HurtoComercio`, `Secuestro`, `Terrorismo`).
 2. **Estandarización de esquema:** Unificación de nombres de columnas con espacios residuales y nomenclaturas heterogéneas.
 3. **Normalización de fechas:** Rescate de formatos mixtos (`YYYYMMDD` y `YYYY-MM-DD`) en `HomicidioIntencional` y filtrado de registros anómalos (ej. año 1905 en `Terrorismo`) al periodo 2015–2025.
 4. **Precisión territorial (DANE):** Normalización del código DANE a 8 dígitos y separación de **Bogotá D.C.** (`cod_depto = 11`) respecto a Cundinamarca.
